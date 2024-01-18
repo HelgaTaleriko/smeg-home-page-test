@@ -1,1 +1,1 @@
-# sweg-home-page-test
+# smeg-home-page-test
