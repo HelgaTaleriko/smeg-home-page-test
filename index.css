@@ -6,6 +6,7 @@
     font-weight: normal;
     font-style: normal
 }
+
 @font-face {
     font-family: 'Proxima Nova Bold';
     src: url('fonts/ProximaNova-Bold/ProximaNova-Bold.eot');
@@ -15,6 +16,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 html {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -30,111 +32,279 @@ body {
     margin: 0;
 }
 
-/*сбрасываем стиль кнопки*/
-button {
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    padding: 0;
-}
+/*сбрасываем стили*/
+
 
 li {
     list-style-type: none;
 }
 
 a {
+    color: #F8F8F8;
     text-decoration: none; /* Убираем подчёркивание */
 
 }
-.header{
-    padding: 30px 80px;
+
+.header {
     background-color: #52aad2;
     color: #F8F8F8;
-    font-family: "Proxima Nova Thin" ;
-    font-size: 35px;
+    font-family: "Proxima Nova Thin";
+    font-size: 1vw;
+    padding: 2vw 4vw;
 }
-.header__wrapper{
+
+.header__wrapper {
     display: flex;
     justify-content: space-between;
 }
-.header__info__text{
+
+.header__info__text {
     text-transform: uppercase;
-    font-size: 45px;
-    font-weight: 900;
+    font-family: "Proxima Nova Bold";
 }
-.header__logo{
-    padding: 50px;
+
+.header__logo img {
+    height: 5vw;
 }
-.header__logo img{
-    width: 700px;
-}
-.header__contact{
-    margin-top: 50px;
+
+.header__contact {
     display: flex;
-    gap: 40px;
+    gap: 3vw;
 }
-.header__contact__wrapper{
+
+.header__contact__wrapper {
     display: flex;
-    gap: 30px;
     flex-direction: column;
+    font-size: 2vw;
+    margin-bottom: auto;
+    gap: 1.2vw;
+
 }
-.header__contact__wrapper a{
-    color: #F8F8F8;
+
+.header__contact__number {
+    font-size: 1.5vw;
+    font-family: "Proxima Nova Bold";
 }
-.header__contact img{
+
+.header__contact img {
     background-color: #F8F8F8;
     border-radius: 50%;
-    margin: 0;
-    height: 130px;
-}
-.header__contact__number{
-    font-size: 40px;
-    font-weight: 600;
-}
-.header__contact__callback:hover{
-    background: linear-gradient(90deg, rgba(0,174,208,0.4) 0%, rgba(0,255,247,0.4) 42%, rgba(0,255,134,0.4) 100%);
+    height: 4vw;
+
 }
 
-.header__contact__callback{
-    padding: 10px;
+.header__contact__callback:hover {
+    background: linear-gradient(90deg, rgba(0, 174, 208, 0.4) 0%, rgba(0, 255, 247, 0.4) 42%, rgba(0, 255, 134, 0.4) 100%);
+}
+
+.header__contact__callback {
     border: #F8F8F8 1px solid;
+    font-size: 1vw;
+    text-align: center;
+    padding: 0.5vw;
     font-weight: 700;
 }
-.nav__wrapper__container{
+
+.nav {
+    height: 3vw;
+    background-color: #F8F8F8;
+    position: sticky;
+    top: 0;
+
+}
+
+.nav__wrapper {
+
+    margin: 1vw 4vw;
+}
+
+.nav__wrapper__container {
     display: flex;
     justify-content: space-between;
 }
-.nav__wrapper__container a{
-    font-size: 50px;
-    line-height: 100px;
-    margin: 50px 80px;
+
+.nav__wrapper__container a {
     color: dimgray;
-    font-family:"Proxima Nova Bold";
+    font-family: "Proxima Nova Bold";
     text-transform: uppercase;
+    font-size: 1.2vw;
 }
-.nav__wrapper__container a:hover{
-    border-bottom: 20px solid #52aad2;
+
+.nav__wrapper__container a:hover {
+    border-bottom: 0.3vw solid #52aad2;
 }
-.main__banner{
-    background-image: url("img/banner.JPG") ;
+
+.main {
+    background-image: url("img/banner.JPG");
     background-repeat: no-repeat;
     background-size: 100vw;
-    height: 1500px;
-    color: #F8F8F8;
-    padding: 7% 20%;
+    height: 100%;
 }
-.main__banner__wrapper{
-    padding: 5%;
-    background: rgba(0, 92, 165, 0.3);
-}
-.main__banner__title{
-    font-family: "Proxima Nova Bold";
-    font-size: 120px;
-    text-shadow: -2px 3px 7px rgba(0,0,0,0.72);
-}
-.main__banner__text{
-    font-family: "Proxima Nova Bold";
-    font-size: 50px;
-    text-shadow: -2px 3px 7px rgba(0,0,0,0.72);
 
+.main__banner {
+    padding: 13% 20%;
+}
+
+.main__banner__wrapper {
+    background: rgba(82, 170, 210, 0.57);
+    color: #F8F8F8;
+    text-align: center;
+    padding: 0.5vw 1vw;
+}
+
+.main__banner__title {
+    font-family: "Proxima Nova Bold";
+    font-size: 2vw;
+    text-shadow: -2px 3px 7px rgba(0, 0, 0, 0.72);
+}
+
+.main__banner__text {
+    font-family: "Proxima Nova Bold";
+    font-size: 1.5vw;
+    text-shadow: -2px 3px 7px rgba(0, 0, 0, 0.72);
+}
+
+.main__card__wrapper {
+    font-family: "Proxima Nova Thin";
+    font-weight: bold;
+    margin: 7vw 4vw 2vw;
+}
+
+.main__card__container {
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main__card__container li {
+    margin-bottom: 2vw;
+
+}
+
+.main__card__container li:hover {
+    box-shadow: 0px 0px 30px 10px rgba(18, 17, 17, 0.47);
+    transition: box-shadow 1s;
+}
+
+.main__card__container img {
+    width: 20vw;
+    height: 15vw;
+}
+
+.main__card__container__title {
+    background-color: rgba(255, 226, 195, 0.42);
+    text-align: center;
+    color: dimgray;
+    font-weight: 700;
+    height: 5vw;
+    padding-top: 1.5vw;
+}
+
+.main__card__container__title:hover {
+    background: rgba(82, 170, 210, 0.30);
+    transition: background-color 1s;
+
+}
+
+.main__request {
+    background-image: url("img/request/3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding:7vw 20vw;
+    color: #000000;
+
+}
+.main__request__wrapper{
+    background-color: rgba(255, 255, 255, 0.72);
+}
+.main__request__container{
+    padding: 2vw;
+}
+.main__request__title {
+    text-align: center;
+    text-shadow: 4px 0px 5px rgb(255, 255, 255);
+    margin-bottom: 2vw;
+}
+.main__request__title h2{
+    font-family: "Proxima Nova Bold";
+    margin-top: 0;
+}
+.main__request__title span{
+    font-family: "Proxima Nova Bold";
+    font-weight: 300;
+}
+.main__request__input__btn{
+    margin-right: auto;
+    border: none;
+    background-color: #52aad2;
+    color: #F8F8F8;
+    text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.72);
+    cursor: pointer;
+    padding: 0.5vw 1vw;
+    transition: transform 1s, background-color 1s ;
+    text-transform: uppercase;
+    font-family: "Proxima Nova Bold";
+    border-radius: 0.5vw;
+}
+.main__request__input__btn:hover{
+    transform: scale(1.3);
+    background-color: #16d7e0;
+}
+.main__request__input{
+    display: flex;
+    align-self: center;
+    gap: 5vw;
+    margin-bottom: 2vw;
+}
+.main__request__input input{
+    margin-left: auto;
+}
+.main__request__persona{
+    font-family: "Proxima Nova Thin";
+    font-size: 0.7vw;
+    font-weight: bold;
+    font-style: italic;
+}
+.main__request__persona a{
+    color: #027fa9;
+}
+input:focus{
+    border: 0;
+}
+.main__quality{
+    font-family: "Proxima Nova Thin";
+    margin: 3vw 4vw;
+    text-align: center;
+}
+.main__quality__сontainer h2{
+    font-family: "Proxima Nova Bold";
+    font-size: 3vw;
+    text-align: center;
+    color: dimgray;
+}
+.main__quality__сontainer span{
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+.main__quality__сontainer ul{
+    display: flex;
+    gap: 2vw;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.main__quality__сontainer li{
+    font-family: "Proxima Nova Bold";
+    font-size: 1.5vw;
+    border: 0.1vw dimgray solid;
+    border-radius: 0 1vw;
+    text-align: center;
+    height: 10vw;
+    width: 30vw;
+    padding: 2.5vw 2vw;
+}
+.main__quality__сontainer li:hover{
+    background-color: rgba(75, 229, 255, 0.3);
 }
