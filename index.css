@@ -139,6 +139,7 @@ a {
     background-repeat: no-repeat;
     background-size: 100vw;
     height: 100%;
+
 }
 
 .main__banner {
@@ -207,35 +208,77 @@ a {
 
 }
 
+.main__about-us {
+    font-family: "Proxima Nova Thin";
+    margin: 2vw 4vw;
+}
+
+.main__about-us h2 {
+    font-family: "Proxima Nova Bold";
+    color: dimgray;
+    font-size: 3vw;
+    text-align: center;
+}
+
+.main__about-us__info p {
+    padding: 2vw 2vw;
+    border: 0.5vw solid rgba(82, 170, 210, 0.57);
+}
+
+.main__about-us__container {
+    display: flex;
+    gap: 10vw;
+}
+
+.main__about-us__container img {
+    height: 25vw;
+}
+
+.main__about-us__container h3 {
+    font-size: 2.5vw;
+}
+
+.main__about-us__for-home,
+.main__about-us__for-business {
+    width: 40vw;
+}
+
+
 .main__request {
     background-image: url("img/request/3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    padding:7vw 20vw;
+    padding: 15vw 20vw;
     color: #000000;
 
 }
-.main__request__wrapper{
+
+.main__request__wrapper {
     background-color: rgba(255, 255, 255, 0.72);
 }
-.main__request__container{
+
+.main__request__container {
     padding: 2vw;
 }
+
 .main__request__title {
     text-align: center;
     text-shadow: 4px 0px 5px rgb(255, 255, 255);
     margin-bottom: 2vw;
 }
-.main__request__title h2{
+
+.main__request__title h2 {
     font-family: "Proxima Nova Bold";
     margin-top: 0;
 }
-.main__request__title span{
+
+.main__request__title span {
     font-family: "Proxima Nova Bold";
     font-weight: 300;
 }
-.main__request__input__btn{
+
+.main__request__input__btn {
     margin-right: auto;
     border: none;
     background-color: #52aad2;
@@ -243,68 +286,225 @@ a {
     text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.72);
     cursor: pointer;
     padding: 0.5vw 1vw;
-    transition: transform 1s, background-color 1s ;
+    transition: transform 1s, background-color 1s;
     text-transform: uppercase;
     font-family: "Proxima Nova Bold";
     border-radius: 0.5vw;
 }
-.main__request__input__btn:hover{
+
+.main__request__input__btn:hover {
     transform: scale(1.3);
     background-color: #16d7e0;
 }
-.main__request__input{
+
+.main__request__input {
     display: flex;
     align-self: center;
     gap: 5vw;
     margin-bottom: 2vw;
 }
-.main__request__input input{
+
+.main__request__input input {
     margin-left: auto;
 }
-.main__request__persona{
+
+.main__request__persona {
     font-family: "Proxima Nova Thin";
     font-size: 0.7vw;
     font-weight: bold;
     font-style: italic;
 }
-.main__request__persona a{
+
+.main__request__persona a {
     color: #027fa9;
 }
-input:focus{
+
+input:focus {
     border: 0;
 }
-.main__quality{
+
+.main__quality {
     font-family: "Proxima Nova Thin";
     margin: 3vw 4vw;
     text-align: center;
 }
-.main__quality__сontainer h2{
+
+.main__quality__container h2 {
     font-family: "Proxima Nova Bold";
     font-size: 3vw;
     text-align: center;
     color: dimgray;
 }
-.main__quality__сontainer span{
+
+.main__quality__container span {
     font-size: 1.5vw;
     font-weight: bold;
 }
-.main__quality__сontainer ul{
+
+.main__quality__container ul {
     display: flex;
     gap: 2vw;
     padding: 0;
     flex-wrap: wrap;
     justify-content: center;
 }
-.main__quality__сontainer li{
-    font-family: "Proxima Nova Bold";
-    font-size: 1.5vw;
-    border: 0.1vw dimgray solid;
-    border-radius: 0 1vw;
-    text-align: center;
+
+.main__quality__container li {
+    display: flex;
+    gap: 1vw;
+    font-family: "Proxima Nova Thin";
+    font-size: 1.2vw;
+    border: 0.4vw rgba(82, 170, 210, 0.57) solid;
+    border-radius: 1vw;
+    text-align: start;
     height: 10vw;
     width: 30vw;
-    padding: 2.5vw 2vw;
+    padding: 1vw 2vw;
+    transition: transform 1s;
 }
-.main__quality__сontainer li:hover{
-    background-color: rgba(75, 229, 255, 0.3);
+
+.main__quality__container li:hover {
+    transform: scale(1.1);
+}
+
+.main__yandex {
+    display: flex;
+}
+
+.main__yandex__request__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__yandex {
+    display: flex;
+    font-family: "Proxima Nova Bold";
+    margin: 4vw 4vw;
+    gap: 2vw
+}
+
+.main__yandex__request__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vw;
+    text-align: center;
+    color: dimgray;
+}
+
+.main__yandex__request__wrapper h2 {
+    margin: 0;
+    font-size: 3vw;
+}
+
+.main__yandex__request__wrapper input {
+    padding: 15px 20px;
+    border: 1px solid #009999;
+    border-radius: 10px;
+    font-size: 1.5vw;
+    width: 40vw;
+    margin-left: 5vw;
+}
+
+.main__yandex__request__btn {
+    margin-right: auto;
+    border: none;
+    background-color: #52aad2;
+    color: #F8F8F8;
+    text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.72);
+    cursor: pointer;
+    padding: 1vw 2vw;
+    transition: transform 1s, background-color 1s;
+    text-transform: uppercase;
+    font-family: "Proxima Nova Bold";
+    border-radius: 0.5vw;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30vw;
+}
+
+.main__yandex__request__btn:hover {
+    background-color: #16d7e0;
+}
+
+.persona span {
+    font-family: "Proxima Nova Thin";
+    font-size: 1vw;
+    margin: 0 2vw;
+}
+
+.persona a {
+    color: #027fa9;
+}
+
+footer {
+    background-color: rgb(87, 87, 87);
+    font-family: "Proxima Nova Thin";
+    color: #F8F8F8;
+}
+
+.footer ul {
+    padding: 0;
+}
+
+.footer li {
+    padding-bottom: 0.5vw;
+}
+
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 3vw;
+    padding: 2vw 4vw;
+}
+
+.footer__info {
+    font-size: 1vw;
+}
+
+.footer__info img {
+    width: 15vw;
+}
+
+.footer h4 {
+    font-size: 1.2vw;
+    text-transform: uppercase;
+    font-family: "Proxima Nova Bold";
+    margin-top: 0;
+    text-align: start;
+
+}
+
+.footer__contact {
+    width: 13vw;
+    display: flex;
+    gap: 2vw;
+    flex-direction: column;
+}
+
+.footer__contact__tel {
+    font-family: "Proxima Nova Bold";
+    font-size: 1.5vw;
+    transition: transform 1s;
+}
+
+.footer__contact__tel:hover {
+    transform: scale(1.2);
+    color: #52aad2;
+}
+
+.footer__link li,
+.footer__navigation li {
+    transition: transform 0.5s;
+
+}
+
+.footer__link li:hover {
+    transform: scale(1.1);
+
+}
+
+.footer__navigation li:hover {
+    transform: scale(1.1);
+
 }
